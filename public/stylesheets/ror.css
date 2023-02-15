@@ -1,0 +1,173 @@
+
+
+
+
+/*Normalize html properties*/
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+    font-size: 62.5%;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+  }
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    box-shadow: 7px 6px 5px rgb(0 0 0 / 24%),
+                -11px -5px 9px -4px rgb(0 0 0 / 24%);
+    border: 1rem solid;
+    border-color: white;
+  }
+
+ul {
+    list-style: none;
+  }
+
+/* Todos los elementos HTML usarán la fuente "Open Sans", sans-serif */
+
+* {
+    font-family: "Open Sans", sans-serif;
+}
+
+/* El elemento body sin margen y sin relleno */
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+h1{
+    margin: 3rem;
+}
+
+#container {
+    display: grid;
+    grid-template-areas: "area1 area1"
+                         "area2 area3";
+ 
+    margin: 3rem;
+
+}
+
+#section_title{
+    grid-area: area1;
+    font-size: 5rem;
+}
+
+#section_main{
+    padding: 5rem;
+    grid-area: area2;
+    display: grid;
+    grid-template-columns: 1.3fr 1fr;
+    grid-template-areas: "area1 area2";
+    align-content: space-between;
+}
+
+
+#image_src {
+    justify-self: center;
+    align-self: center;
+    width: 35%;
+    max-width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+
+#section_aside{grid-area: area3;}
+
+#text_main {
+    display: flex;
+    flex-direction: column;
+    padding: 0 7rem 0 0;
+}
+
+#text_main > * {
+    padding: 1rem 0;
+}
+
+.title{
+    font-size: 4rem;
+}
+.text {
+    font-size: 2rem;
+    text-align: justify;
+}
+
+#category {
+    font-weight: bold;
+}
+
+#footer_main{
+    align-self: flex-end;
+
+}
+
+
+#section_aside {
+    margin: 0 3rem 0 0;
+    border: .4rem rgb(156, 4, 4);
+    border-style: none none none solid;
+    padding: 0 0 0 3rem;
+}
+
+.img_group{
+    width: 80%;
+    margin: 3rem 0;
+}
+
+
+
+/*
+
+#container {
+    display: flex;
+    margin: 5rem;
+}
+
+#section_main {
+    display: grid;
+    grid-template-areas: "area1 area1"
+                         "area2 area3";
+}
+
+#section_title{
+    grid-area: area1;
+}
+
+
+#image_main{
+    grid-area: area2;
+}
+
+#text_main {
+    grid-area: area3;
+    display: grid;
+    
+}
+*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

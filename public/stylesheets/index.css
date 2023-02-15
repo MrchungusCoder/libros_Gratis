@@ -1,0 +1,196 @@
+
+
+/*Normalize html properties*/
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+    font-size: 62.5%;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+  }
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    box-shadow: 7px 6px 5px rgb(0 0 0 / 24%);
+  }
+
+ul {
+    list-style: none;
+  }
+
+
+
+/* Todos los elementos HTML usarán la fuente "Open Sans", sans-serif */
+
+* {
+    font-family: "Open Sans", sans-serif;
+}
+
+/* El elemento body sin margen y sin relleno */
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+/* El elemento header tendrá una imagen de fondo */
+
+header {
+    box-shadow: inset 0 0 0 1000px rgba(248, 248, 248, 0.418);
+    background-image: url('../images/background.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center; 
+}
+
+
+/*---------------------*/
+/*HEADER SECTION*/
+/*---------------------*/
+
+#section_header{
+    padding: 45rem 8rem 2rem;
+}
+
+#titulo_header{
+    font-size: 5rem;
+    padding: 2rem 0;
+}
+#texto_header{
+    font-size: 1.8rem;
+}
+
+.container{
+    display: grid;
+    grid-template-areas: "area1 area2"
+
+}
+
+#container_texts {
+    grid-area: area1;
+}
+
+#img_group{ 
+    grid-area: area2;
+    display: grid;  
+    grid-template-areas: "area1 area2 area3 area4";
+    column-gap: 1.6rem;
+}
+
+#box1{grid-area: area1;}
+#box2{grid-area: area2;}
+#box3{grid-area: area3;}
+#box4{grid-area: area4;}
+
+.img_box {
+    margin: 0 .5rem;
+    border: .5rem solid;
+    border-color: white;
+}
+
+/*---------------------*/
+/*NAVBAR SECTION*/
+/*---------------------*/
+
+#section_navbar{
+    margin: 20px 0;
+}
+
+.navbar_container{
+    display: flex;
+    justify-content: space-around;
+}
+
+.nav_link {
+    font-size: 1.8rem;
+}
+
+
+/*---------------------*/
+/*MAIN SECTION*/
+/*---------------------*/
+
+#container_main {
+    padding: 3rem 8rem;
+    display: grid;
+    /*grid-template-areas: "area1 area1 area1 area1 area1"
+                         "area2 area3 area4 area5 area6";*/
+    grid-template-areas: "area1"
+                         "area2";
+    /*justify-content: space-around;column-gap: 6rem;*/
+    
+                         
+}
+#caja1 {
+    padding: 1.4rem 0;
+    font-size: 3rem;
+    grid-area: area1;
+}
+.img_group_2{
+    grid-area: area2;
+    display: grid;
+    grid-template-areas: "area1 area2 area3 area4 area5";
+}
+#caja2{grid-area: area1;}
+#caja3{grid-area: area2;}
+#caja4{grid-area: area3;}
+#caja5{grid-area: area4;}
+#caja6{grid-area: area5;}
+
+.img_grid {
+    width: 74%;
+    height: 100%;
+    object-fit: cover;
+    border: .5rem solid;
+    border-color: white;
+}
+
+/*
+#caja1 {
+    padding: 1.4rem 0;
+    font-size: 3rem;
+    grid-area: area1;
+}
+
+#caja2 {
+    grid-area: area2;
+}
+
+#caja3 {
+    grid-area: area3;
+}
+
+#caja4 {
+    grid-area: area4;
+}
+
+#caja5 {
+    grid-area: area5;
+}
+
+#caja6 {
+    grid-area: area6;
+}
+
+
+.img_grid {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+*/
+
+
+
+
+
+
+
